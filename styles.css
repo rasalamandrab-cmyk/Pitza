@@ -1,0 +1,41 @@
+/* Custom Wood Texture Background */
+.bg-wood-pattern {
+    background-color: #1a0f0a;
+    background-image: radial-gradient(rgba(217, 155, 0, 0.05) 1px, transparent 0),
+                      linear-gradient(to bottom, rgba(15, 8, 5, 0.85), rgba(26, 15, 10, 0.95)),
+                      url('https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1200&q=80');
+    background-size: 20px 20px, 100% 100%, cover;
+    background-attachment: fixed;
+}
+
+.hero-pizza-glow {
+    filter: drop-shadow(0 20px 30px rgba(217, 155, 0, 0.25));
+}
+
+@keyframes slowSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spin-slow {
+    animation: slowSpin 60s linear infinite;
+}
+
+.spin-slow:hover {
+    animation-play-state: paused;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1a0f0a;
+}
+::-webkit-scrollbar-thumb {
+    background: #d99b00;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #b88300;
+}
